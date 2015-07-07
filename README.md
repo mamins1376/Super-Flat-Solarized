@@ -1,13 +1,11 @@
-Super Flat Remix GNOME theme
+Super Flat Solarized
 ===========
 
-This theme is available for use under a Creative Commons ShareAlike license.
+a Flat Theme based and forked from [Super Flat theme][super-flat-repo] by [Daniel Ruiz de Alegría][daniel].
 
-Super Flat remix GNOME theme is a pretty simple shell theme, derived from [Paper](http://snwh.org/paper/) theme. Its design is mostly flat with a subtle use of shadows, highlights and gradients for some depth.
+this is a [Solarized][solarized] version of original theme in both dark and light color sets.
 
-![alt tag](http://i1123.photobucket.com/albums/l553/mikelon1/1.jpg~original)
-![alt tag](http://i1123.photobucket.com/albums/l553/mikelon1/3.jpg~original)
+feel free to feedback and fork.
 
-This theme was designed to fit with the [Super Flat Remix icon theme](http://the-ilife.com/post/127).
-
-![alt tag](http://i1123.photobucket.com/albums/l553/mikelon1/2.jpg~original)
+[super-flat-repo]: https://github.com/daniruiz/Super-Flat-Remix-GNOME-theme
+[daniel]: https://github.com/daniruiz

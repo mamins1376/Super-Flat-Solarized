@@ -9,3 +9,4 @@ feel free to feedback and fork.
 
 [super-flat-repo]: https://github.com/daniruiz/Super-Flat-Remix-GNOME-theme
 [daniel]: https://github.com/daniruiz
+[solarized]: http://ethanschoonover.com/solarized

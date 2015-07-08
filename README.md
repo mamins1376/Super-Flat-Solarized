@@ -20,7 +20,7 @@ and then, install it using `make`:
 sudo make install
 ```
 
-## It sucks! how i remove it from my system? ##
+## It sucks! how should i remove it from my system? ##
 Well! you can complately remove it  by following `make` command:
 ```
 sudo make uninstall

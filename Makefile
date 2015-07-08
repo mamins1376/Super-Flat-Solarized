@@ -23,16 +23,16 @@ help:
 	@echo '  make update-light      # update just light theme'
 
 uninstall-dark:
-	[ -d $(DARK_THEME_DIR) ] && rm -rf $(DARK_THEME_DIR)
+	[ -d $(DARK_THEME_DIR) ] && rm -rf $(SYS_DARK_PATH)
 
 uninstall-light:
-	[ -d $(LIGHT_THEME_DIR) ] && rm -rf $(LIGHT_THEME_DIR)
+	[ -d $(LIGHT_THEME_DIR) ] && rm -rf $(SYS_LIGHT_PATH)
 
 install-dark:
 	cp -r ./$(DARK_THEME_DIR) $(SYS_DARK_PATH)
 
 install-light:
-	cp -r ./$(LIGHT_THEME_DIR) $(LIGHT_DARK_PATH)
+	cp -r ./$(LIGHT_THEME_DIR) $(SYS_LIGHT_PATH)
 
 install: install-dark install-light
 	@echo 'Themes installed.'

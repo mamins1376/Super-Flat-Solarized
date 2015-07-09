@@ -2,13 +2,14 @@
 
 a Flat Theme based and forked from [Super Flat theme][super-flat-repo] by [Daniel Ruiz de Alegría][daniel].
 
-this is a [Solarized][solarized] version of original theme in both dark and light color sets.
+this is a [Solarized][solarized] version of original theme in both dark and light color sets. see its [Site][site]
 
 feel free to feedback and fork.
 
 [super-flat-repo]: https://github.com/daniruiz/Super-Flat-Remix-GNOME-theme
 [daniel]: https://github.com/daniruiz
 [solarized]: http://ethanschoonover.com/solarized
+[site]: http://mamins1376.github.io/Super-Flat-Solarized
 
 ## How can i install it? ##
 first, download the zip file and extract it, or clone repo using this:

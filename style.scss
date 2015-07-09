@@ -18,6 +18,10 @@ $green: #859900;
 
 // Fonts
 @font-face {
+  font-family: 'Comfortaa';
+  src: local('Comfortaa'), url('assets/comfortaa.ttf');
+}
+@font-face {
   font-family: 'Iranian Sans';
   src: local('Iranian Sans'), url('../irsans.ttf');
 }

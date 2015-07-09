@@ -13,7 +13,7 @@
    width="64"
    height="64"
    id="svg7384"
-   inkscape:version="0.91+devel r14080 custom"
+   inkscape:version="0.91 r13725"
    sodipodi:docname="view-grid-symbolic.svg"
    viewBox="0 0 64 64">
   <sodipodi:namedview
@@ -25,8 +25,8 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1920"
-     inkscape:window-height="1008"
+     inkscape:window-width="1024"
+     inkscape:window-height="704"
      id="namedview7"
      inkscape:document-units="px"
      showgrid="false"
@@ -57,5 +57,5 @@
      d="m 7,7 0,16.666667 16.666667,0 0,-16.666667 z m 33.333333,0 0,16.666667 16.666667,0 L 57,7 Z m -29.166666,4.166667 8.333333,0 0,8.333333 -8.333333,0 z m 33.333333,0 8.333333,0 0,8.333333 L 44.5,19.5 Z M 7,40.333333 7,57 l 16.666667,0 0,-16.666667 z m 33.333333,0 0,16.666667 L 57,57 57,40.333333 Z M 11.166667,44.5 19.5,44.5 l 0,8.333333 -8.333333,0 z m 33.333333,0 8.333333,0 0,8.333333 -8.333333,0 z"
      inkscape:connector-curvature="0"
      id="rect2999"
-     style="color:#bebebe;display:inline;overflow:visible;visibility:visible;opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:4.16666603;marker:none;enable-background:accumulate" />
+     style="color:#bebebe;display:inline;overflow:visible;visibility:visible;opacity:1;fill:#000000;fill-opacity:0.78735632;fill-rule:nonzero;stroke:none;stroke-width:4.16666603;marker:none;enable-background:accumulate" />
 </svg>

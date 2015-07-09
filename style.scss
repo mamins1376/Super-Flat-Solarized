@@ -15,6 +15,7 @@ $violet: #6c71c4;
 $blue: #268bd2;
 $cyan: #2aa198;
 $green: #859900;
+$query: 'screen and (max-width: 800px)';
 
 // Fonts
 @font-face {
@@ -81,6 +82,15 @@ h3 {
       text-shadow: 0 2px 6px rgba($base02,0.2);
     }
   }
+  @media $query {
+    height: 32px;
+    & h1 {
+      font-size: 1.4em;
+    }
+    & .language {
+      display: none;
+    }
+  }
 }
 .language {
   margin-top: 10px;
@@ -90,6 +100,7 @@ h3 {
   transition: 200ms;
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center center;
   color: $base3;
   text-align: center;
   font-size: 2em;
@@ -117,6 +128,9 @@ h3 {
   & p {
     font-size: 2em;
     padding: 3em 0;
+    @media $query {
+      font-size: 1.2em;
+    }
   }
 }
 #dark-intro {
@@ -126,6 +140,10 @@ h3 {
     margin: 0 auto;
     color: $base1;
     padding-top: 1em;
+    @media $query {
+      max-width: 100%;
+      font-size: 0.7em;
+    }
   }
   & h1 {
     display: inline-block;
@@ -133,10 +151,16 @@ h3 {
   }
   & div {
     padding: 6em 0;
+    @media $query {
+      padding: 4em 0;
+    }
   }
   .label {
     color: $base1;
     text-shadow: 0 0 6px $base1;
+    @media $query {
+      font-size: 0.7em;
+    }
   }
   #dark-label {
     color: $base01;
@@ -151,6 +175,10 @@ h3 {
     color: $base02;
     padding-top: 1em;
     font-size: 1.2em;
+    @media $query {
+      max-width: 100%;
+      font-size: 0.7em;
+    }
   }
   & h1 {
     display: inline-block;
@@ -158,10 +186,16 @@ h3 {
   }
   & div {
     padding: 6em 0;
+    @media $query {
+      padding: 4em 0;
+    }
   }
   .label {
     color: $base00;
     text-shadow: 0 0 6px $base00;
+    @media $query {
+      font-size: 0.7em;
+    }
   }
   #light-label {
     color: $base1;
@@ -184,6 +218,9 @@ h3 {
   }
   & div {
     padding: 6em 0;
+    @media $query {
+      padding: 4em 0;
+    }
   }
   .label {
     color: $magenta;
@@ -192,6 +229,9 @@ h3 {
 }
 #get-it {
   background-image: url("assets/gnome-bg-3.jpg");
+  @media $query {
+    font-size: 1.6em;
+  }
   & .button {
     line-height: 1.5em;
     background-color: $violet ;
@@ -205,10 +245,18 @@ h3 {
     font-size: 1.2em;
     transition: 200ms;
     box-shadow: 0 1px 3px $base01;
+    @media $query {
+      font-size: 1em;
+      padding: 8px 16px;
+      line-height: 1.2em;
+    }
     &:hover {
       background-color: $green;
       padding: 8px 48px;
       box-shadow: 0 1px 8px $base03;
+      @media $query {
+        padding: 8px 16px;
+      }
     }
   }
   div {
@@ -216,6 +264,9 @@ h3 {
   }
   h1 {
     line-height: 3em;
+    @media $query {
+      line-height: 2em;
+    }
   }
 }
 .site-footer {
@@ -230,5 +281,9 @@ h3 {
     &:hover {
       color: $base2;
     }
+  }
+  @media $query {
+    line-height: 1.5em;
+    padding: 1em 0;
   }
 }

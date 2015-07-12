@@ -40,6 +40,10 @@ h3 {
   margin: 0;
   padding: 0;
 }
+a {
+  text-decoration: none;
+  color: inherit;
+}
 
 // Classes
 .rtl {
@@ -71,12 +75,13 @@ h3 {
   box-shadow: 0 0 8px $base03;
   position: fixed;
   width: 100%;
+  z-index: 1;
   & a {
     color: $base00;
-    text-decoration: none;
-    padding: 4px 0;
+    padding: 7px 0;
     display: block;
     transition: 200ms;
+    white-space: nowrap;
     &:hover {
       color: $base01;
       text-shadow: 0 2px 6px rgba($base02,0.2);
@@ -92,8 +97,18 @@ h3 {
     }
   }
 }
+.spacer {
+  display: block;
+  height: 46px;
+  @media $query {
+    height: 32px;
+  }
+}
+.screenshots {
+  margin: 8px;
+}
 .language {
-  margin-top: 10px;
+  margin-top: 5px;
 }
 .banner {
   display: block;
@@ -114,12 +129,53 @@ h3 {
     font-variant: small-caps;
   }
 }
-.banner-hidden {
-
-}
 .label {
   white-space: nowrap;
   font-size: 0.95em;
+}
+.screenshot {
+  max-width: calc(33% - 35px);
+  display: inline-block;
+  margin: 1em;
+  img {
+    max-width: 100%;
+    transition: 500ms;
+    z-index: 0;
+  }
+  figcaption {
+    font-weight: bold;
+    text-align: center;
+    padding: 0.5em 0;
+    transition: 500ms;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    white-space: nowrap;
+  }
+  @media $query {
+    max-width: calc(33% - 16px);
+    margin: 0.4em;
+    font-size: 0.9em;
+    figcaption {
+      padding: 0.2em 0;
+    }
+  }
+}
+.site-footer {
+  line-height: 2.5em;
+  background-color: $base03;
+  color: $base01;
+  text-shadow: 0 2px 4px $base00;
+  a {
+    transition: 200ms;
+    color: $base0;
+    &:hover {
+      color: $base2;
+    }
+  }
+  @media $query {
+    line-height: 1.5em;
+    padding: 1em 0;
+  }
 }
 
 // Elements Direct Styling
@@ -239,7 +295,6 @@ h3 {
     margin: 0 auto;
     padding: 8px 24px;
     border-radius: 16px;
-    text-decoration: none;
     text-shadow: none;
     color: $base2;
     font-size: 1.2em;
@@ -269,21 +324,47 @@ h3 {
     }
   }
 }
-.site-footer {
-  line-height: 2.5em;
-  background-color: $base03;
-  color: $base01;
-  text-shadow: 0 2px 4px $base00;
-  a {
-    text-decoration: none;
-    transition: 200ms;
-    color: $base0;
-    &:hover {
-      color: $base2;
+#dark-shots {
+  background-color: $base02;
+  color: $base00;
+  .label {
+    font-size: 2em;
+    line-height: 3em;
+    text-align: center;
+    @media $query{
+      line-height: 2em;
     }
   }
-  @media $query {
-    line-height: 1.5em;
-    padding: 1em 0;
+  figcaption {
+    background-color: $base01;
+    color: $base03;
+  }
+  a:hover figcaption {
+    background-color: $base1;
+  }
+  a:hover img {
+    filter: brightness(1.2);
+  }
+}
+#light-shots {
+  background-color: $base2;
+  color: $base0;
+  .label {
+    font-size: 2em;
+    line-height: 3em;
+    text-align: center;
+    @media $query{
+      line-height: 2em;
+    }
+  }
+  figcaption {
+    background-color: $base1;
+    color: $base3;
+  }
+  a:hover figcaption {
+    background-color: $base01;
+  }
+  a:hover img {
+    filter: brightness(0.8);
   }
 }

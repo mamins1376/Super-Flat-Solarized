@@ -2,7 +2,7 @@
 
 a Flat Theme based and forked from [Super Flat theme][super-flat-repo] by [Daniel Ruiz de Alegría][daniel].
 
-this is a [Solarized][solarized] version of original theme in both dark and light color sets. see its [Site][site]
+this is a [Solarized][solarized] version of original theme in both dark and light color sets. see its [Site][site]. also it's good idea to see the [Screenshots]
 
 feel free to feedback and fork.
 
@@ -10,6 +10,7 @@ feel free to feedback and fork.
 [daniel]: https://github.com/daniruiz
 [solarized]: http://ethanschoonover.com/solarized
 [site]: http://mamins1376.github.io/Super-Flat-Solarized
+[Screenshots]: http://mamins1376.github.io/Super-Flat-Solarized/screenshots.html
 
 ## How can i install it? ##
 first, download the zip file and extract it, or clone repo using this:

@@ -391,6 +391,9 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 .popup-menu .popup-menu-content {
   padding: 1em 0;
   background-color: #eee8d5;
+  border: solid 1px #93a1a1;
+  border-radius: 5px;
+  box-shadow: 0 0 10px black;
 }
 .popup-menu .popup-menu-item {
   spacing: 12px;
@@ -1344,7 +1347,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   border-radius: 0 6px 6px 0;
 }
 .workspace-thumbnail-indicator {
-  border: 5px solid white;
+  border: 5px solid #fdf6e3;
   border-radius: 2px;
   padding: 0;
 }
@@ -1364,17 +1367,17 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   width: 34em;
   margin: 5px;
   border-radius: 2px;
-  color: #eee8d5;
-  background-color: #586e75;
+  color: #073642;
+  background-color: #93a1a1;
   border: none;
   border-width: 0;
-  box-shadow: 0 3px 8px #586e75;
+  box-shadow: 0 3px 8px #93a1a1;
 }
 .notification-banner:hover, .notification-banner:focus {
   margin: 5px;
-  background-color: #073642;
-  color: #fdf6e3;
-  box-shadow: 0 5px 10px #073642;
+  background-color: #eee8d5;
+  color: #002b36;
+  box-shadow: 0 5px 10px #eee8d5;
 }
 .notification-banner .notification-icon {
   padding: 5px;
@@ -2134,30 +2137,30 @@ a .notification-banner .secondary-icon {
   text-shadow: none;
   icon-shadow: none;
 }
-.modal-dialog-button {
-  border-radius: 2px;
-  border: none;
-  background: rgba(0, 0, 0, 0.015);
-  margin-top: 0.5em;
-  padding: 4px 32px;
-  color: #777;
-  font-weight: bold;
-  box-shadow: none;
-  text-shadow: none;
-  icon-shadow: none;
-}
-.modal-dialog-button:hover {
-  color: #333;
-}
-.modal-dialog-button:focus {
-  color: #777;
-}
 .candidate-page-button:active, .candidate-page-button:pressed {
   color: #777;
   border: none;
   box-shadow: none;
   text-shadow: none;
   icon-shadow: none;
+}
+.modal-dialog-button {
+  border-radius: 2px;
+  border: none;
+  background-color: #93a1a1;
+  margin-top: 0.5em;
+  padding: 4px 32px;
+  color: #073642;
+  font-weight: bold;
+  box-shadow: none;
+  text-shadow: none;
+  icon-shadow: none;
+  transition-duration: 0.08s;
+}
+.modal-dialog-button:hover, .modal-dialog-button:focus {
+  background-color: #073642;
+  color: #eee8d5;
+  box-shadow: 0 0 8px #073642;
 }
 .modal-dialog-button:active, .modal-dialog-button:pressed {
   color: #777;

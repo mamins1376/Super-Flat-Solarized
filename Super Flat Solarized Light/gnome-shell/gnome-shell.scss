@@ -479,6 +479,9 @@ StScrollBar {
   .popup-menu-content {
     padding: 1em 0;
     background-color: $base2;
+    border: solid 1px $base1;
+    border-radius: 5px;
+    box-shadow: 0 0 10px black;
   }
   .popup-menu-item {
     spacing: 12px;
@@ -2412,26 +2415,6 @@ a .notification-banner .secondary-icon {
   box-shadow: none;
   text-shadow: none;
   icon-shadow: none;
-}
-.modal-dialog-button {
-  border-radius: 2px;
-  border: none;
-  background: rgba(0, 0, 0, 0.015);
-  margin-top: 0.5em;
-  padding: 4px 32px;
-  color: #777;
-  font-weight: bold;
-  box-shadow: none;
-  text-shadow: none;
-  icon-shadow: none;
-  &:hover {
-    color: #333;
-  }
-  &:focus {
-    color: #777;
-  }
-}
-.candidate-page-button {
   &:active,
   &:pressed {
     color: #777;
@@ -2442,6 +2425,23 @@ a .notification-banner .secondary-icon {
   }
 }
 .modal-dialog-button {
+  border-radius: 2px;
+  border: none;
+  background-color: $base1;
+  margin-top: 0.5em;
+  padding: 4px 32px;
+  color: $base02;
+  font-weight: bold;
+  box-shadow: none;
+  text-shadow: none;
+  icon-shadow: none;
+  transition-duration: 0.08s;
+  &:hover,
+  &:focus {
+    background-color: $base02;
+    color: $base2;
+    box-shadow: 0 0 8px $base02;
+  }
   &:active,
   &:pressed {
     color: #777;

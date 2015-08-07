@@ -22,6 +22,10 @@ help:
 	@echo '  make update-dark       # update just dark theme'
 	@echo '  make update-light      # update just light theme'
 
+	@echo '  make apply-light       # set gnome-shell theme to light'
+	@echo '  make apply-dark        # set gnome-shell theme to dark'
+	@echo '  make discard           # set gnome-shell theme to default'
+
 uninstall-dark:
 	[ -d $(DARK_THEME_DIR) ] && rm -rf $(SYS_DARK_PATH)
 
@@ -37,7 +41,7 @@ install-light:
 install: install-dark install-light
 	@echo 'Themes installed.'
 
-uninstall: uninstall-dark uninstall-light
+uninstall: discard uninstall-dark uninstall-light
 	@echo 'Both themes are now complately removed.'
 
 update-dark: uninstall-dark install-dark
@@ -48,3 +52,12 @@ update-light: uninstall-light install-light
 
 update: update-dark update-light
 	@echo ''
+
+apply-light:
+	gsettings set org.gnome.shell.extensions.user-theme name 'Super Flat Solarized Light'
+
+apply-dark:
+	gsettings set org.gnome.shell.extensions.user-theme name 'Super Flat Solarized Dark'
+
+discard:
+	gsettings reset org.gnome.shell.extensions.user-theme name

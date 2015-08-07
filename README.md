@@ -17,14 +17,18 @@ first, download the zip file and extract it, or clone repo using this:
 ```
 git clone 'https://github.com/mamins1376/Super-Flat-Solarized.git'
 ```
-and then, install it using `make`:
+install it using `make`:
 ```
 sudo make install
 ```
+finally set GNOME Shell theme:
+```
+make apply-dark # for Super Flat Solarized Dark
+make apply-light # for Super Flat Solarized Light
+```
 
 ## It sucks! how should i remove it from my system? ##
-Well! you can complately remove it  by following `make` command:
+Well! you can complately remove it  by following `make` command, after telling  me the reason :D
 ```
 sudo make uninstall
 ```
-please tell me the reason why you removed this ;)

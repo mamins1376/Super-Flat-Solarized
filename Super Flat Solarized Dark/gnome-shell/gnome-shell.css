@@ -36,7 +36,7 @@ StEntry {
   color: #fdf6e3;
   background-color: #073642;
   background-gradient-direction: none;
-  border-color: #dc322f;
+  border: solid 1px #657b83;
   box-shadow: none;
   selection-background-color: #268bd2;
   selected-color: #fff;
@@ -141,7 +141,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   border-radius: 8px;
   color: #fdf6e3;
   background-color: #073642;
-  border: none;
+  border: solid 1px #657b83;
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
   padding: 24px;
 }
@@ -150,7 +150,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   background-color: #fdf6e3;
   background-gradient-direction: none;
   box-shadow: 0 0 3px #fdf6e3;
-  border: none;
+  border: solid 1px #657b83;
   color: #002b36;
   border-radius: 1px;
   margin-bottom: 6px;
@@ -178,6 +178,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 .end-session-dialog {
   spacing: 42px;
+  border: solid 1px #657b83;
 }
 .end-session-dialog-list {
   padding-top: 20px;
@@ -240,8 +241,8 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   font-size: 10pt;
 }
 .nm-dialog .button, .end-session-dialog .button {
-  background-color: #93a1a1;
-  color: #073642;
+  background-color: #586e75;
+  color: #eee8d5;
   box-shadow: none;
   transition-duration: 200ms;
 }
@@ -318,8 +319,8 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 .prompt-dialog {
   width: 500px;
-  border-radius: 2px;
-  border: none;
+  border-radius: 5px;
+  border: solid 1px #657b83;
 }
 .prompt-dialog-main-layout {
   spacing: 24px;
@@ -330,7 +331,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 .prompt-dialog-headline {
   font-weight: bold;
-  color: #b2b2a9;
+  color: #fdf6e3;
 }
 .prompt-dialog-description:rtl {
   text-align: right;
@@ -341,7 +342,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 .prompt-dialog-error-label {
   font-size: 10pt;
-  color: #c00;
+  color: #fdf6e3;
   padding-bottom: 8px;
 }
 .prompt-dialog-info-label {
@@ -377,20 +378,25 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   spacing-columns: 1em;
 }
 .popup-menu {
-  border-radius: 5px;
-  box-shadow: 0 2px 6px #000;
+  border-radius: 5x;
   min-width: 200px;
+  box-shadow: 0 2px 4px #000;
 }
 .popup-menu .popup-sub-menu {
   color: #b58900;
   background-color: #839496;
   background-gradient-direction: none;
-  border-width: 0;
   box-shadow: none;
+  margin: 0;
+  padding: 0;
+  border: none;
 }
 .popup-menu .popup-menu-content {
   padding: 1em 0;
   background-color: #073642;
+  box-shadow: 0 0 10px black;
+  border-radius: 5px;
+  border: solid 1px #657b83;
 }
 .popup-menu .popup-menu-item {
   spacing: 12px;
@@ -545,7 +551,6 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   border-radius: 8px;
   padding: 12px;
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
-  border: none;
 }
 .tile-preview {
   background-color: rgba(57, 64, 66, 0.5);
@@ -1247,8 +1252,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 #dash .app-well-app .overview-icon {
   width: 60px;
-  transition: width 2s;
-  transition-duration: 1000ms;
+  transition-duration: 1s;
 }
 .app-well-app.running > .overview-icon {
   border-radius: 0;
@@ -2134,24 +2138,6 @@ a .notification-banner .secondary-icon {
   text-shadow: none;
   icon-shadow: none;
 }
-.modal-dialog-button {
-  border-radius: 2px;
-  border: none;
-  background: rgba(0, 0, 0, 0.015);
-  margin-top: 0.5em;
-  padding: 4px 32px;
-  color: #777;
-  font-weight: bold;
-  box-shadow: none;
-  text-shadow: none;
-  icon-shadow: none;
-}
-.modal-dialog-button:hover {
-  color: #333;
-}
-.modal-dialog-button:focus {
-  color: #777;
-}
 .candidate-page-button:active, .candidate-page-button:pressed {
   color: #777;
   border: none;
@@ -2159,8 +2145,27 @@ a .notification-banner .secondary-icon {
   text-shadow: none;
   icon-shadow: none;
 }
+.modal-dialog-button {
+  border-radius: 2px;
+  border: none;
+  background-color: #586e75;
+  margin-top: 0.5em;
+  padding: 4px 32px;
+  color: #eee8d5;
+  font-weight: bold;
+  box-shadow: none;
+  text-shadow: none;
+  icon-shadow: none;
+  transition-duration: 0.08s;
+}
+.modal-dialog-button:hover, .modal-dialog-button:focus {
+  background-color: #eee8d5;
+  color: #002b36;
+  box-shadow: 0 0 8px #eee8d5;
+}
 .modal-dialog-button:active, .modal-dialog-button:pressed {
-  color: #777;
+  color: #fdf6e3;
+  background-color: #002b36;
   border: none;
   box-shadow: none;
   text-shadow: none;
